@@ -1,0 +1,219 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 4fr 7fr 1.8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+  }
+  .nav_bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "theater_name links links .";
+    grid-area: 1 / 1 / 2 / 5;
+    background-color: black;
+    color: white;
+  }
+
+  .month_2{
+    
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgb(230, 230, 230);
+    font-size: 18px;
+}
+  
+  .theater_name { 
+      grid-area: theater_name;
+      place-self: center; 
+    
+    }
+  
+  .links { 
+      grid-area: links; 
+      place-self: center;
+      text-decoration: none;
+      color: white;
+      justify-content: space-evenly;
+      margin: 2em;
+    }
+
+  .links :hover{
+      color: rgb(167, 164, 164);
+  }
+  
+  .bigpicture { 
+      grid-area: 2 / 1 / 3 / 5;
+      justify-self: center;
+      max-width: 100%;
+      height: auto;
+      margin-left: 30px;
+      margin-right: 30px;
+      overflow: hidden;
+    }
+
+    .bigpicture img{
+        position: relative;
+    }
+
+    .bp_text{
+            position: absolute;
+            color: white;
+            top: 40vh;
+            left: 46vh;
+            z-index: 1;
+            place-self: center;
+            font-size: 100px;
+        
+    }
+
+  .body { 
+      grid-area: 3 / 1 / 4 / 5; 
+
+    }
+  
+  .footer { 
+      grid-area: 4 / 1 / 5 / 5; 
+      background-color: black;
+
+    }
+  
+  .map_pic { 
+      grid-area: 4 / 1 / 5 / 2; 
+      place-self: center;
+    }
+  
+  .info { 
+      grid-area: 4 / 2 / 5 / 3; 
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info :hover{
+        color: rgb(167, 164, 164)
+    }
+  
+  .shows { 
+      grid-area: 4 / 3 / 5 / 4; 
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .shows :hover{
+        color: rgb(167, 164, 164)
+    }
+  
+  .social { 
+      grid-area: 4 / 4 / 5 / 5; 
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      align-self: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .social :hover{
+        color: rgb(167, 164, 164)
+    }
+  
+    .show_times {
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+      grid-template-rows: .5fr 1fr 5px 1fr 5px 1fr 5px 1fr 5px; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "month month month month"
+        "lilpic words words readmore"
+        "line line line line"
+        "lilpic1 words1 words1 readmore1"
+        "line1 line1 line1 line1"
+        "lilpic2 words2 words2 readmore2"
+        "line2 line2 line2 line2"
+        "lilpic3 words3 words3 readmore3"
+        "line3 line3 line3 line3"; 
+      grid-area: 3 / 2 / 4 / 4; 
+    }
+    .line {grid-area: line; }
+    .line3 { grid-area: line3; }
+    .line2 { grid-area: line2; }
+    .line1 { grid-area: line1; }
+    .month { 
+      grid-area: month; 
+      border: 1px solid grey;
+      background-color: rgb(224, 224, 224);
+      align-self: end;
+    }
+    .lilpic { 
+      grid-area: lilpic; 
+      place-self: center;
+    }
+    .lilpic1 { 
+      grid-area: lilpic1; 
+      place-self: center;
+    }
+    .lilpic2 { 
+      grid-area: lilpic2; 
+      place-self: center;
+    }
+    .lilpic3 { 
+      grid-area: lilpic3; 
+      place-self: center;
+    }
+    .words { 
+      grid-area: words;
+      place-self: center;
+      margin-bottom: 20px;
+     }
+    .words1 { 
+      grid-area: words1; 
+      place-self: center;
+      margin-bottom: 20px;
+    }
+    .words2 { 
+      grid-area: words2; 
+      place-self: center;
+      margin-bottom: 20px;
+    }
+    .words3 { 
+      grid-area: words3; 
+      place-self: center;
+      margin-bottom: 20px;
+    }
+    .readmore { 
+      grid-area: readmore; 
+      color: white;
+      justify-self: end;
+      align-self: center;
+    }
+    .readmore1 { 
+      grid-area: readmore1; 
+      color: white;
+      justify-self: end;
+      align-self: center;
+    }
+    .readmore2 { 
+      grid-area: readmore2; 
+      color: white;
+      justify-self: end;
+      align-self: center;
+    }
+    .readmore3 { 
+      grid-area: readmore3; 
+      color: white;
+      justify-self: end;
+      align-self: center;
+    }
+    
+
+    
+  
